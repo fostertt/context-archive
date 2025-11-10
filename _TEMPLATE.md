@@ -1,4 +1,6 @@
 # [Topic/Title]
+## Naming Convention
+**Format:** `YYYY-MM-DD_AI-Tool_Topic-Keywords.md`
 
 **Date:** YYYY-MM-DD  
 **AI Tool:** [Claude/Claude Code/Gemini CLI/ChatGPT/Replit]  
