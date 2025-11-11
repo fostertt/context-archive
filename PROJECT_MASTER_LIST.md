@@ -32,10 +32,10 @@ Convert i5-8400 desktop into 24/7 home server for self-hosting services.
 
 **Features to Implement:**
 - ✅ Ubuntu Server 24.04 LTS
-- SSH access
-- Tailscale VPN
-- Docker containerization
-- Pi-hole (DNS-level ad blocking)
+- ✅ USSH access
+- ✅ UTailscale VPN
+- ✅ UDocker containerization
+- ✅ UPi-hole (DNS-level ad blocking)
 - Plex Media Server (migrated from Power Dev)
 - Recipe management app (Tandoor/Mealie)
 - AI Router/Manager app
