@@ -31,19 +31,27 @@ Convert i5-8400 desktop into 24/7 home server for self-hosting services.
 - Running Ubuntu Server 24.04 LTS
 
 **Features to Implement:**
-- ✅ Ubuntu Server 24.04 LTS
-- ✅ USSH access
-- ✅ UTailscale VPN
-- ✅ UDocker containerization
-- ✅ UPi-hole (DNS-level ad blocking)
-- Plex Media Server (migrated from Power Dev)
-- Recipe management app (Tandoor/Mealie)
-- AI Router/Manager app
+  - ✅ Ubuntu Server 24.04 LTS
+  - ✅ SSH access
+  - ✅ Tailscale VPN
+  - ✅ Docker containerization
+  - ✅ Pi-hole (DNS-level ad blocking)
+  - ✅ Install and Configure UPS
+  - ✅ NAS
+  - Vaultwarden (self-hosted password manager) 
+  - Reverse Proxy (e.g., Nginx Proxy Manager, Caddy)
+  - Plex Media Server (migrated from Power Dev)
+  - Recipe management app (Tandoor/Mealie)
+  - AI Router/Manager app
+  - Firewall & Security: Configure ufw (Uncomplicated Firewall) to lock down ports, ensuring only necessary services are exposed.
+  - Service Monitoring: Install and configure a status page/monitoring tool (e.g., Uptime Kuma) to get alerts if services go down.
+  - Google Cloud Service (GCS) back up
+  - Backup Strategy: Plan and implement an automated backup solution (e.g., Duplicati, Borg, or rsync scripts) for critical data (Vaultwarden, Docker volumes, etc.). Is this in addition to       GCS back up?p
 
-**Current Phase:** Phase 1, Step 1 - Installing Ubuntu Server 24.04 LTS
+**Current Phase:** Phase 2?
 
 **Next Action:**
-- Complete Ubuntu Server installation on SSD
+- | **Vaultwarden Fix** | **Reverse Proxy Setup** | **The most urgent issue.** Vaultwarden is installed (on port 8085) but requires `https://` to initialize. We must fix this to move forward. |
 - Document SSH setup process
 
 **Dependencies:**
@@ -123,13 +131,7 @@ Central productivity hub for habits, tasks, reminders, meal planning, grocery li
 - ✅ Phase 1: Foundation (Next.js setup)
 - ✅ Phase 2: Core functionality (habits CRUD)
 - ✅ Phase 3: Authentication (Google OAuth)
-- 🎯 Phase 4: Item Model Migration (NEXT)
-
-**Phase 4 Details:**
-- Migrate from simplified Habit model to unified Item model
-- Item types: habits, tasks, reminders, meals
-- Preserve 3 existing test habits
-- Enable future features (tasks, reminders, meal planning)
+- ✅ Phase 4: Item Model Migration (NEXT)
 
 **Planned Features:**
 - Health tracking integration
@@ -140,9 +142,13 @@ Central productivity hub for habits, tasks, reminders, meal planning, grocery li
 - Voice input via AI Assistant (from P5)
 
 **Next Action:**
-- Execute Phase 4: Habit → Item model migration
-- Use Claude Code for implementation
-- Test that existing habits still work
+**Session 1: Quick Wins (Option A - Part 1)**
+  - Separate items into sections (Today's Habits | Tasks | Reminders)
+  - Add filter buttons
+  - Basic visual polish (cards, spacing, colors)
+  - **Result**: Dashboard looks professional, easy to navigate
+
+**Then**:https://docs.google.com/document/d/1tGRFsBfryJ-LMzu4UbsA2oleDAmWC9Zd7H0fBrWVESg/edit?tab=t.0#heading=h.kfpjt2w5f4vu
 
 **Dependencies:**
 - None (standalone for now)
